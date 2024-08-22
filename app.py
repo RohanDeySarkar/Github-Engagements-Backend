@@ -174,11 +174,6 @@ def get_repo_data():
     data = git_hub.get_data(query)
     return data
 
-@app.route('/', methods=['GET'])
-def hello():
-    token = os.getenv('TOKEN')
-    return token
-
 if __name__ == '__main__':
     app.run(debug=True)
 
