@@ -164,7 +164,6 @@ class GithubData:
 app = Flask(__name__)
 CORS(app)
 
-# dotenv.load_dotenv()
 
 @app.route('/reponame', methods=['POST'])
 def get_repo_data():
