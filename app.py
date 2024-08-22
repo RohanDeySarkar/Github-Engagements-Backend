@@ -4,6 +4,7 @@ from flask import Flask, request
 from flask_cors import CORS
 from pytrends.request import TrendReq
 import os
+import dotenv 
 
 class GithubData:
     def __init__(self, token):
@@ -164,6 +165,7 @@ class GithubData:
 app = Flask(__name__)
 CORS(app)
 
+dotenv.load_dotenv()
 
 @app.route('/reponame', methods=['POST'])
 def get_repo_data():

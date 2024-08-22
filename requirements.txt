@@ -44,6 +44,7 @@ PyJWT==2.9.0
 PyNaCl==1.5.0
 pyparsing==3.1.2
 python-dateutil==2.9.0.post0
+python-dotenv==1.0.1
 pytrends==4.9.2
 pytz==2024.1
 requests==2.32.3
