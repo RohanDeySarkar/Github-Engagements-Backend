@@ -167,6 +167,10 @@ CORS(app)
 
 dotenv.load_dotenv()
 
+@app.route('/', methods=['POST'])
+def hello():
+    return "hello from flask!"
+
 @app.route('/reponame', methods=['POST'])
 def get_repo_data():
     token = os.getenv('TOKEN')
@@ -176,7 +180,7 @@ def get_repo_data():
     return data
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
 
 
 # flask --app app --debug run
