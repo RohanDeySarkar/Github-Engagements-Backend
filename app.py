@@ -188,8 +188,9 @@ if __name__ == '__main__':
 # Docker
 # docker build -t githubapp .
 # docker run -p 5000:5000 githubapp
-# 
-# 
+# docker tag githubapp deysarkarrohan/githubappflask:v1.0 
+# docker push deysarkarrohan/githubflaskapp:v1.0
+
 
 
 
