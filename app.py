@@ -158,8 +158,8 @@ class GithubData:
                 "topic_interest" : topic_interest
             }
             return temp_data
-        except:
-            return f'{repository} not found'
+        except Exception as err:
+            return err
 
 
 app = Flask(__name__)
