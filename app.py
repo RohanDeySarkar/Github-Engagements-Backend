@@ -167,7 +167,7 @@ CORS(app)
 
 dotenv.load_dotenv()
 
-@app.route('/', methods=['POST'])
+@app.route('/')
 def hello():
     return "hello from flask!"
 
@@ -185,6 +185,11 @@ if __name__ == '__main__':
 
 # flask --app app --debug run
 
+# Docker
+# docker build -t githubapp .
+# docker run -p 5000:5000 githubapp
+# 
+# 
 
 
 
